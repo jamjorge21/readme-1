@@ -1,0 +1,13 @@
+{
+  "name": "read-me-generator",
+  "version": "1.0.0",
+  "description": "\"Read me generator homework\"",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Martinez",
+  "license": "ISC"
+}
