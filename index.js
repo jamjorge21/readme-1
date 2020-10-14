@@ -60,51 +60,52 @@ const questions =[
 
 console.clear();
 
-inquirer.prompt(questions).then(response => {
+inquirer
+.prompt(questions).then(response => {
 
-    fs.appendFileSync("README.md", ("#" + response.title) + '/n', function(err){
+    fs.appendFileSync("README.md", ("#" + response.title) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
 
-    fs.appendFileSync("README.md", ("Description" + response.description) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##Description" + "\r\n"+ response.description) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
   
-    fs.appendFileSync("README.md", ("installation instructions" + response.installation) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##installation instructions" + "\r\n"+ response.installation) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
   
-    fs.appendFileSync("README.md", ("github" + response.github) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##github" + "\r\n" + response.github) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
   
-    fs.appendFileSync("README.md", ("license" + response.license) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##license" +"\r\n"+ response.license) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
   
-    fs.appendFileSync("README.md", ("contributing" + response.contributing) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##contributing" + "\r\n" + response.contributing) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
       console.log("success!");
     });
   
-    fs.appendFileSync("README.md", ("test" + response.tests) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##test" + "\r\n" + response.tests) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
@@ -113,7 +114,7 @@ inquirer.prompt(questions).then(response => {
   
 
   
-    fs.appendFileSync("README.md", ("questions" + response.question) + '/n', function(err){
+    fs.appendFileSync("README.md", ("##questions" +"\r\n" + response.question) + '\r\n', function(err){
       if (err) {
         return console.log(err);
       }
